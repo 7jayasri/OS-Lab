@@ -28,3 +28,21 @@ int main(int argc, char *argv[])
     }
     return 0;
 }
+//output
+
+vitcse@vitcse-ThinkCentre-M70t-Gen-4:~$ gedit cp.c
+vitcse@vitcse-ThinkCentre-M70t-Gen-4:~$ gcc cp.c
+vitcse@vitcse-ThinkCentre-M70t-Gen-4:~$ ./a.out
+Usage: ./a.out <filename>
+vitcse@vitcse-ThinkCentre-M70t-Gen-4:~$ ./a.out cp.c
+Number of spaces: 215
+vitcse@vitcse-ThinkCentre-M70t-Gen-4:~$ gedit grep.c
+vitcse@vitcse-ThinkCentre-M70t-Gen-4:~$ gcc grep.c
+vitcse@vitcse-ThinkCentre-M70t-Gen-4:~$ ./a.out 
+usage:	./a.out filename word
+vitcse@vitcse-ThinkCentre-M70t-Gen-4:~$ ./a.out  grep.c
+usage:	./a.out filename word
+vitcse@vitcse-ThinkCentre-M70t-Gen-4:~$ ./a.out  grep.c include
+grep.c: 1 #include <stdio.h>
+grep.c: 2 #include <string.h>
+grep.c: 3 #include <stdlib.h>
